@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  worker:
+    build: .
+    command: celery --app app.core.impl.celery worker --loglevel=info --logfile=app/logs/celery.log
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=app.config.DevelopmentConfig
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  dashboard:
+    build: .
+    command: celery --app app.core.impl.celery flower --port=5555 --broker=redis://redis:6379/0
+    ports:
+      - '5556:5555'
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=project.server.config.DevelopmentConfig
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+      - worker
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - APP_DB_USER=docker
+      - APP_DB_PASS=docker
+      - APP_DB_NAME=urban_pilot
+    ports:
+      - '5432:5432'
+
+  adminer:
+    image: adminer
+    ports:
+      - '8080:8080'
+
+  redis:
+    image: redis:6-alpine

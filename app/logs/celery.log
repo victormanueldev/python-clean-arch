@@ -1,0 +1,103 @@
+[2022-12-12 19:45:15,832: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-12 19:45:15,835: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-12 19:45:16,843: INFO/MainProcess] mingle: all alone
+[2022-12-12 19:45:16,861: INFO/MainProcess] celery@8fa92b006f45 ready.
+[2022-12-12 19:45:20,635: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-12 19:52:23,226: ERROR/MainProcess] Received unregistered task of type 'app.events.related_zip_data'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[15, 5524], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (85b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'app.events.related_zip_data', 'id': '64256d6a-821c-4fc0-9540-0f6e0af9019c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '64256d6a-821c-4fc0-9540-0f6e0af9019c', 'parent_id': None, 'argsrepr': '(15, 5524)', 'kwargsrepr': '{}', 'origin': 'gen130563@victor-pc', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'app.events.related_zip_data'
+[2022-12-12 19:53:42,648: ERROR/MainProcess] Received unregistered task of type 'app.events.related_zip_data'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[16, 5524], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (85b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'app.events.related_zip_data', 'id': 'eb1a6092-5447-4511-9791-4904dd267598', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'eb1a6092-5447-4511-9791-4904dd267598', 'parent_id': None, 'argsrepr': '(16, 5524)', 'kwargsrepr': '{}', 'origin': 'gen130676@victor-pc', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'app.events.related_zip_data'
+[2022-12-12 19:58:38,568: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-12 19:58:38,572: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-12 19:58:39,582: INFO/MainProcess] mingle: all alone
+[2022-12-12 19:58:39,603: INFO/MainProcess] celery@74704a5137d8 ready.
+[2022-12-12 19:58:43,264: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-12 20:03:52,083: ERROR/MainProcess] Received unregistered task of type 'app.events.related_zip_data'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[17, 5524], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (85b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'app.events.related_zip_data', 'id': '103f7146-ece0-4091-8dde-f9d04c983e4c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '103f7146-ece0-4091-8dde-f9d04c983e4c', 'parent_id': None, 'argsrepr': '(17, 5524)', 'kwargsrepr': '{}', 'origin': 'gen132910@victor-pc', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'app.events.related_zip_data'
+[2022-12-12 20:34:59,524: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-12 20:34:59,527: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-12 20:35:00,535: INFO/MainProcess] mingle: all alone
+[2022-12-12 20:35:00,552: INFO/MainProcess] celery@82e9fbdf2baa ready.
+[2022-12-12 20:35:04,226: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-12 20:37:19,274: ERROR/MainProcess] Received unregistered task of type 'app.events.related_zip_data'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[17, 5524], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (85b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'app.events.related_zip_data', 'id': '9d7993a8-047d-45a3-a7b9-2896b9a82c0f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '9d7993a8-047d-45a3-a7b9-2896b9a82c0f', 'parent_id': None, 'argsrepr': '(17, 5524)', 'kwargsrepr': '{}', 'origin': 'gen6128@victor-pc', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'app.events.related_zip_data'
